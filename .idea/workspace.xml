@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddProjet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Affichage/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mecanique/Yn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personnage/EquipementDefensif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personnage/EquipementOffensif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personnage/Personnage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personnage/Type.java" afterDir="false" />
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/personnage/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/personnage/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affichage/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/Yn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personnage/EquipementDefensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/EquipementDefensif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personnage/EquipementOffensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/EquipementOffensif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personnage/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Personnage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personnage/Type.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +60,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Personnage" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
@@ -105,11 +105,35 @@
       <option name="presentableId" value="Default" />
       <updated>1714136517220</updated>
       <workItem from="1714136518257" duration="6230000" />
-      <workItem from="1714372890223" duration="617000" />
+      <workItem from="1714372890223" duration="14447000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1714373651974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714373651974</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/personnage/EquipementOffensif.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
