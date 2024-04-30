@@ -1,19 +1,20 @@
 package Mecanique;
 import Affichage.Display;
+import Plateau.Board;
 import Plateau.Caisse;
 import personnage.Personnage;
 
-import java.util.List;
+
 
 
 public class Game {
 
     private final Display display;
     private final Personnage perso;
-    private final List<Caisse> board;
+    private final Board board;
     private final Jetdede lance;
 
-    public Game(Display display, Personnage perso, List<Caisse> board) {
+    public Game(Display display, Personnage perso, Board board) {
         this.display = display;
         this.perso = perso;
         this.board = board;
@@ -35,7 +36,7 @@ public class Game {
                 System.out.println("Vous avez fait un score de " + result + " !");
                 perso.setPosition(perso.getPosition() + result);
 
-                Caisse caisse = board.get(perso.getPosition());
+                Caisse caisse = board.getCaisseList().get(perso.getPosition());
                 caisse.open(perso);
             }
         }

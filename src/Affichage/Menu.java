@@ -1,6 +1,7 @@
 package Affichage;
 
 import Mecanique.*;
+import Plateau.Board;
 import Plateau.Caisse;
 import Plateau.MonsterCaisse;
 import Plateau.PotionCaisse;
@@ -20,12 +21,12 @@ public class Menu {
 
         Personnage perso = display.creatPerso();
         List<Caisse> caisses = List.of(
-                new PotionCaisse(3),
+                new PotionCaisse("Potion Standard",3),
                 new MonsterCaisse("gobelin", 13)
         );
 
 
-        Game game = new Game(display, perso, caisses);
+        Game game = new Game(display, perso, new Board(caisses));
 
         try {
             System.out.println(perso.hurler());
