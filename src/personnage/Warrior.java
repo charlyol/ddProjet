@@ -11,4 +11,9 @@ public class Warrior extends Personnage {
         this.setEquipementDefensif(new EquipementDefensif("Bouclier", 3));
 
     }
+
+    @Override
+    public String hurler() {
+        return "Waaaah";
+    }
 }

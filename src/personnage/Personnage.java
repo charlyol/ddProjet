@@ -1,6 +1,6 @@
 package personnage;
 
-public class Personnage {
+public abstract class Personnage {
 
     private String nom;
     private int life;
@@ -60,4 +60,5 @@ public class Personnage {
         this.equipementDefensif = equipementDefensif;
     }
 
+    public abstract String hurler();
 }

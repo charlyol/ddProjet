@@ -11,4 +11,9 @@ public class Wizard extends Personnage {
         this.setEquipementDefensif(new EquipementDefensif("Philtre", 2));
 
     }
+
+    @Override
+    public String hurler() {
+        return "Hihou";
+    }
 }
