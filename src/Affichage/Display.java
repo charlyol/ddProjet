@@ -4,6 +4,7 @@ import personnage.Personnage;
 import Mecanique.Dialog;
 import personnage.Warrior;
 import personnage.Wizard;
+import Mecanique.Game;
 
 import java.util.Scanner;
 
@@ -40,6 +41,28 @@ public class Display {
                 default:
                     System.out.println("Invalid input: ");
             }
+        }
+    }
+
+    public void launcherGame(Personnage perso) {
+        Game game = new Game();
+        int result;
+        boolean relancer = true;
+        perso.setPosition(1);
+
+        while (perso.getPosition() < 64 && relancer) {
+            System.out.println("Vous êtes actuellement sur la case " + perso.getPosition());
+            relancer = dialog.askBoolean("Voulez-vous lancer le dé ?");
+
+            if (relancer) {
+                result = game.game(perso);
+                System.out.println("Vous avez fait un score de " + result + " !");
+                perso.setPosition(perso.getPosition() + result);
+            }
+        }
+
+        if (perso.getPosition() >= 64) {
+            System.out.println("Félicitations vous êtes sur la case 64 ! Vous avez fini le jeu !");
         }
     }
 }

@@ -5,8 +5,17 @@ public class Personnage {
     private String nom;
     private int life;
     private int levelAtk;
+    private int position;
     private EquipementOffensif equipementOffensif;
     private EquipementDefensif equipementDefensif;
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
 
     public Personnage(String nom) {
         this.nom = nom;
