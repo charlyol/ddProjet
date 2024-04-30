@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/olinger.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mecanique/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mecanique/Jetdede.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Affichage/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Personnage.java" afterDir="false" />
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="dé ok">
+      <change afterPath="$PROJECT_DIR$/src/Mecanique/Caisse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/personnage/EquipementVie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "charlyol"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/charlyol/JsGameDandD.git",
+    "accountId": "999e6917-20c7-4d9f-b0f3-493472ffe623"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -45,7 +55,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "charly",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/olinger/IdeaProjects/campus-java-algo",
     "node.js.detected.package.eslint": "true",
@@ -104,7 +114,7 @@
       <updated>1714136517220</updated>
       <workItem from="1714136518257" duration="6230000" />
       <workItem from="1714372890223" duration="14588000" />
-      <workItem from="1714391561862" duration="9903000" />
+      <workItem from="1714391561862" duration="13411000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -122,7 +132,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714391489318</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dé ok">
+      <option name="closed" value="true" />
+      <created>1714468142215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714468142215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dé ok">
+      <option name="closed" value="true" />
+      <created>1714468299618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714468299619</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +157,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="dé ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="dé ok" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
