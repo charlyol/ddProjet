@@ -40,7 +40,7 @@ public class Game {
                 caisse.open(perso);
             }
         }
-        if (perso.getPosition() > 64) {
+        if (perso.getPosition() >= board.getSizeBoard().length) {
             throw new PersonnageHorsPlateauException("Félicitations vous êtes sur la case 64 ! Vous avez fini le jeu !");
         }
     }

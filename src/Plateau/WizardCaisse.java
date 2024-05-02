@@ -2,11 +2,11 @@ package Plateau;
 
 import personnage.Personnage;
 
-public class ArmeCaisse implements Caisse{
+public class WizardCaisse implements Caisse{
     private final String name;
     private final int attaque;
 
-    public ArmeCaisse(String name, int attaque) {
+    public WizardCaisse(String name, int attaque) {
         this.name = name;
         this.attaque = attaque;
     }

@@ -22,7 +22,7 @@ public class Menu {
         List<Caisse> caisses = listCaisse.getCaisses();
 
 
-        Game game = new Game(display, perso, new Board(caisses));
+        Game game = new Game(display, perso, new Board(caisses,64));
 
         try {
             System.out.println(perso.hurler());

@@ -9,6 +9,7 @@ public abstract class Personnage {
     private EquipementOffensif equipementOffensif;
     private EquipementDefensif equipementDefensif;
 
+
     public int getPosition() {
         return position;
     }
