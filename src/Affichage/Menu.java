@@ -16,30 +16,17 @@ public class Menu {
             System.exit(0);
         }
 
-        Personnage perso = display.creatPerso();
-
-        ListCaisse listCaisse = new ListCaisse();
-        List<Caisse> caisses = listCaisse.getCaisses();
-
-
-        Game game = new Game(display, perso, new Board(caisses,64));
+        Game game = new Game(display, null, null,0);
 
         try {
-            System.out.println(perso.hurler());
+            game.initializeGame();
+            System.out.println(game.getPerso().hurler());
             while (true) {
                 game.playTurn();
             }
         } catch (PersonnageHorsPlateauException e) {
             System.out.println(e.getMessage());
         }
-
-//        System.out.println(perso.getNom());
-//        System.out.println(perso.getLife());
-//        perso.setLife(perso.getLife()+10);
-//        System.out.println(perso.getLife());
-//        System.out.println(perso.getEquipementOffensif().getNom());
-//        System.out.println(perso.getEquipementOffensif().getNiveauAttaque());
-
-
     }
 }
+

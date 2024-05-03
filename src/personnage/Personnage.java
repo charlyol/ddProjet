@@ -4,7 +4,9 @@ public abstract class Personnage {
 
     private String nom;
     private int life;
+    private int lifeMax;
     private int levelAtk;
+    private int levelAtkMax;
     private int position;
     private EquipementOffensif equipementOffensif;
     private EquipementDefensif equipementDefensif;
@@ -44,7 +46,21 @@ public abstract class Personnage {
     public void setLevelAtk(int levelAtk) {
         this.levelAtk = levelAtk;
     }
+    public int getLifeMax() {
+        return lifeMax;
+    }
 
+    public void setLifeMax(int lifeMax) {
+        this.lifeMax = lifeMax;
+    }
+
+    public int getLevelAtkMax() {
+        return levelAtkMax;
+    }
+
+    public void setLevelAtkMax(int levelAtkMax) {
+        this.levelAtkMax = levelAtkMax;
+    }
     public EquipementOffensif getEquipementOffensif() {
         return equipementOffensif;
     }

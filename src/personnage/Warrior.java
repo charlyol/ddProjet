@@ -7,8 +7,12 @@ public class Warrior extends Personnage {
         super(nom);
         this.setLife(10);
         this.setLevelAtk(10);
-        this.setEquipementOffensif(new EquipementOffensif("Épée", 5));
-        this.setEquipementDefensif(new EquipementDefensif("Bouclier", 3));
+        this.setLifeMax(20);
+        this.setLevelAtkMax(20);
+        Arme arme = new Arme();
+        Bouclier bouclier = new Bouclier();
+        this.setEquipementOffensif(arme);
+        this.setEquipementDefensif(bouclier);
 
     }
 

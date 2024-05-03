@@ -7,8 +7,12 @@ public class Wizard extends Personnage {
         super(nom);
         this.setLife(6);
         this.setLevelAtk(15);
-        this.setEquipementOffensif(new EquipementOffensif("Sort", 8));
-        this.setEquipementDefensif(new EquipementDefensif("Philtre", 2));
+        this.setLifeMax(12);
+        this.setLevelAtkMax(30);
+        Philtre philtre = new Philtre();
+        Sort sort = new Sort();
+        this.setEquipementDefensif(philtre);
+        this.setEquipementOffensif(sort);
 
     }
 

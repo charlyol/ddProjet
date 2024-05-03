@@ -1,12 +1,11 @@
 package Affichage;
 
 import Mecanique.CreatNewPersonnageException;
-import Mecanique.PersonnageHorsPlateauException;
 import personnage.Personnage;
 import Mecanique.Dialog;
 import personnage.Warrior;
 import personnage.Wizard;
-import Mecanique.Game;
+
 
 import java.util.Scanner;
 
@@ -60,4 +59,13 @@ public class Display {
     public boolean askThrowDice() {
         return dialog.askBoolean("Voulez-vous lancer le dé ?");
     }
+
+    public void notifyStatsPerso(Personnage personnage) {
+        System.out.println(" Vie : " + personnage.getLife());
+        System.out.println(" Equipement Offensif : " + personnage.getEquipementOffensif().getNom());
+        System.out.println(" Points Atk : " + personnage.getEquipementOffensif().getNiveauAttaque());
+        System.out.println(" Equipement Défensif : " + personnage.getEquipementDefensif().getNom());
+        System.out.println(" Points Def : " + personnage.getEquipementDefensif().getNiveauDefense());
+    }
+
 }

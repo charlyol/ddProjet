@@ -5,7 +5,7 @@ import java.util.List;
 public class Board {
     
     final List<Caisse> caisseList;
-    private final int[] sizeBoard;
+    private int[] sizeBoard;
 
     public Board(List<Caisse> caisses, int sizeBoard) {
         ListCaisse listCaisse = new ListCaisse();
@@ -21,4 +21,9 @@ public class Board {
         return sizeBoard;
     }
 
+    public void setSizeBoard(int sizeBoard) {
+        this.sizeBoard = new int[sizeBoard];
+    }
+
+//dificulter
 }

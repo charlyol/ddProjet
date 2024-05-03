@@ -1,6 +1,6 @@
 package personnage;
 
-public class EquipementOffensif {
+public abstract class EquipementOffensif {
 
     private String nom;
     private int niveauAttaque;

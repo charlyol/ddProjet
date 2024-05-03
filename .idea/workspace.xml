@@ -4,17 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="monster maker">
-      <change afterPath="$PROJECT_DIR$/src/Plateau/WarriorCaisse.java" afterDir="false" />
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="caisse ok">
+      <change afterPath="$PROJECT_DIR$/src/Plateau/videCaisse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/personnage/Arme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/personnage/Bouclier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/personnage/Philtre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/personnage/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Affichage/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mecanique/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/ArmeCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/WizardCaisse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/Jetdede.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Jetdede.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plateau/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plateau/ListCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/ListCaisse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementVie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/PotionCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/PotionCaisse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/WarriorCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/WarriorCaisse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/WizardCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/WizardCaisse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementDefensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/EquipementDefensif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementOffensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/EquipementOffensif.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/personnage/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Personnage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +71,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -72,7 +83,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/olinger/IdeaProjects/ddProjet/src/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -130,7 +141,9 @@
       <workItem from="1714372890223" duration="14588000" />
       <workItem from="1714391561862" duration="19120000" />
       <workItem from="1714480554091" duration="6839000" />
-      <workItem from="1714633368782" duration="6676000" />
+      <workItem from="1714633368782" duration="11272000" />
+      <workItem from="1714648952294" duration="11797000" />
+      <workItem from="1714719053668" duration="20497000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -196,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714488216547</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="caisse ok">
+      <option name="closed" value="true" />
+      <created>1714640648824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714640648824</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +231,37 @@
     <MESSAGE value="board start" />
     <MESSAGE value="caisse maker" />
     <MESSAGE value="monster maker" />
-    <option name="LAST_COMMIT_MESSAGE" value="monster maker" />
+    <MESSAGE value="caisse ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="caisse ok" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Plateau/MonsterCaisse.java</url>
+          <line>16</line>
+          <properties class="Plateau.MonsterCaisse" method="open">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Plateau/MonsterCaisse.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Plateau/MonsterCaisse.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
