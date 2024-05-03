@@ -21,6 +21,9 @@ public class MonsterCaisse implements Caisse {
             if (perso.getEquipementDefensif().getNiveauDefense() - atk < 0) {
                 perso.setLife(perso.getLife() + perso.getEquipementDefensif().getNiveauDefense() - atk);
                 int toto = perso.getEquipementDefensif().getNiveauDefense() - atk;
+                if (toto < 0){
+                    toto=0;
+                }
                 System.out.println(" Le " + name + " vous enlève " + toto + " de PV ");
             } else {
                 System.out.println(" Le " + name + " ne vous touche pas ");
