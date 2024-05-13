@@ -33,18 +33,4 @@ public class Dialog {
         }
     }
 
-    public boolean askDeadOrNot(String info) {
-        System.out.println(" " + info + " (Y / n) ");
-        String answer = scanner.nextLine().trim().toLowerCase();
-        switch (answer) {
-            case "n":
-                return false;
-            case "y":
-            case "":
-                return true;
-            default:
-                System.out.println("Invalid input: " + answer);
-                return askBoolean(info);
-        }
-    }
 }

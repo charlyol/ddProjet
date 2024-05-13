@@ -38,54 +38,64 @@ public class Game {
 
     public void playTurn() throws PersonnageHorsPlateauException {
         int result;
-        boolean relancer = true;
         perso.setPosition(1);
 
-        while (relancer) {
-            relancer = display.askThrowDice();
+        while (true) {
+            moovePlayer();
+            Caisse caisse = board.getCaisseList().get(perso.getPosition());
+            caisse.open(perso);
+            if (perso.getLife() <= 0) {
+                boolean response = dialog.askBoolean("Bravo ! vous êtes mort ! Nouvelle partie ?");
+                if (response) {
+                    System.out.println("L'aventure recommence ?");
+                    Menu menu = new Menu();
+                    menu.affichage();
+                } else {
+                    System.out.println("Peut-être une autre fois...");
+                    System.exit(0);
+                }
+            }
+            display.notifyStatsPerso(getPerso());
+        }
+    }
 
-            if (relancer) {
+    private void moovePlayer() throws PersonnageHorsPlateauException {
+        int result;
+        while (true) {
+            if (display.askThrowDice()) {
                 display.notifyMoveOnCase(perso.getPosition());
                 result = lance.jetDeDe();
                 System.out.println("Vous avez fait un score de " + result + " !");
                 perso.setPosition(perso.getPosition() + result);
                 if (perso.getPosition() >= board.getSizeBoard().length) {
                     throw new PersonnageHorsPlateauException("Félicitations vous êtes sur la case 64 ! Vous avez fini le jeu !");
+                }
+                return;
             }
-        }
-        Caisse caisse = board.getCaisseList().get(perso.getPosition());
-        caisse.open(perso);
-        if (perso.getLife() <= 0) {
-            boolean response = dialog.askDeadOrNot("Bravo ! vous êtes mort ! Nouvelle partie ?");
-            if (response) {
-                System.out.println("L'aventure recommence ?");
-                Menu menu = new Menu();
-                menu.affichage();
-            } else {
-                System.out.println("Peut-être une autre fois...");
+
+            if (display.askFlee()) {
+                display.notifyChooseToFlee();
                 System.exit(0);
             }
         }
-        display.notifyStatsPerso(getPerso());
     }
-}
 
 
-public Personnage getPersonnage() {
-    return perso;
-}
+    public Personnage getPersonnage() {
+        return perso;
+    }
 
-public Board getBoard() {
-    return board;
-}
+    public Board getBoard() {
+        return board;
+    }
 
-public Personnage getPerso() {
-    return perso;
-}
+    public Personnage getPerso() {
+        return perso;
+    }
 
-public void setPerso(Personnage perso) {
-    this.perso = perso;
-}
+    public void setPerso(Personnage perso) {
+        this.perso = perso;
+    }
 
 }
 

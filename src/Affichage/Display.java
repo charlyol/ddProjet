@@ -60,6 +60,10 @@ public class Display {
         return dialog.askBoolean("Voulez-vous lancer le dé ?");
     }
 
+    public boolean askFlee() {
+        return dialog.askBoolean("Voulez-vous fuir ?");
+    }
+
     public void notifyStatsPerso(Personnage personnage) {
         System.out.println(" Vie : " + personnage.getLife());
         System.out.println(" Equipement Offensif : " + personnage.getEquipementOffensif().getNom());
@@ -68,4 +72,7 @@ public class Display {
         System.out.println(" Points Def : " + personnage.getEquipementDefensif().getNiveauDefense());
     }
 
+    public void notifyChooseToFlee() {
+        System.out.println("Peut être une autre fois...");
+    }
 }

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="correction life dans monster caisse a faire">
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="tout fonctionne pour le jeu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Affichage/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mecanique/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Dialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mecanique/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/PotionCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/PotionCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,7 @@
       <workItem from="1714633368782" duration="11272000" />
       <workItem from="1714648952294" duration="11797000" />
       <workItem from="1714719053668" duration="20947000" />
-      <workItem from="1715583051435" duration="5086000" />
+      <workItem from="1715583051435" duration="10381000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -235,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714747059500</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="tout fonctionne pour le jeu">
+      <option name="closed" value="true" />
+      <created>1715588300859</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715588300859</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +258,8 @@
     <MESSAGE value="game presque fini mais fonctionne" />
     <MESSAGE value="correction life" />
     <MESSAGE value="correction life dans monster caisse a faire" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction life dans monster caisse a faire" />
+    <MESSAGE value="tout fonctionne pour le jeu" />
+    <option name="LAST_COMMIT_MESSAGE" value="tout fonctionne pour le jeu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
