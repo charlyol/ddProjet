@@ -1,22 +1,19 @@
 package Affichage;
 
 import Mecanique.*;
-import Plateau.*;
-import personnage.Personnage;
-
-import java.util.List;
 
 public class Menu {
 
     public void affichage() {
         Display display = new Display();
         boolean shouldStart = display.start();
+        Dialog dialog = new Dialog();
 
         if (!shouldStart) {
             System.exit(0);
         }
 
-        Game game = new Game(display, null, null,0);
+        Game game = new Game(display, null, null, 0);
 
         try {
             game.initializeGame();
@@ -25,7 +22,15 @@ public class Menu {
                 game.playTurn();
             }
         } catch (PersonnageHorsPlateauException e) {
-            System.out.println(e.getMessage());
+            boolean response = dialog.askBoolean("Bravo vous avez fini le jeu ! Nouvelle partie ?");
+            if (response) {
+                System.out.println("L'aventure recommence ?");
+                Menu menu = new Menu();
+                menu.affichage();
+            } else {
+                System.out.println("Peut-être une autre fois...");
+                System.exit(0);
+            }
         }
     }
 }

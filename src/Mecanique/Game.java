@@ -1,6 +1,7 @@
 package Mecanique;
 
 import Affichage.Display;
+import Affichage.Menu;
 import Plateau.Board;
 import Plateau.Caisse;
 import Plateau.ListCaisse;
@@ -15,6 +16,8 @@ public class Game {
     private Personnage perso;
     private final Board board;
     private final Jetdede lance;
+    Dialog dialog = new Dialog();
+
 
     public Game(Display display, Personnage perso, List<Caisse> caisses, int sizeBoard) {
         this.display = display;
@@ -39,38 +42,50 @@ public class Game {
         perso.setPosition(1);
 
         while (relancer) {
-            display.notifyMoveOnCase(perso.getPosition());
             relancer = display.askThrowDice();
 
             if (relancer) {
+                display.notifyMoveOnCase(perso.getPosition());
                 result = lance.jetDeDe();
                 System.out.println("Vous avez fait un score de " + result + " !");
                 perso.setPosition(perso.getPosition() + result);
                 if (perso.getPosition() >= board.getSizeBoard().length) {
                     throw new PersonnageHorsPlateauException("Félicitations vous êtes sur la case 64 ! Vous avez fini le jeu !");
-                }
-                Caisse caisse = board.getCaisseList().get(perso.getPosition());
-                caisse.open(perso);
-                display.notifyStatsPerso(getPerso());
             }
         }
+        Caisse caisse = board.getCaisseList().get(perso.getPosition());
+        caisse.open(perso);
+        if (perso.getLife() <= 0) {
+            boolean response = dialog.askDeadOrNot("Bravo ! vous êtes mort ! Nouvelle partie ?");
+            if (response) {
+                System.out.println("L'aventure recommence ?");
+                Menu menu = new Menu();
+                menu.affichage();
+            } else {
+                System.out.println("Peut-être une autre fois...");
+                System.exit(0);
+            }
+        }
+        display.notifyStatsPerso(getPerso());
     }
+}
 
-    public Personnage getPersonnage() {
-        return perso;
-    }
 
-    public Board getBoard() {
-        return board;
-    }
+public Personnage getPersonnage() {
+    return perso;
+}
 
-    public Personnage getPerso() {
-        return perso;
-    }
+public Board getBoard() {
+    return board;
+}
 
-    public void setPerso(Personnage perso) {
-        this.perso = perso;
-    }
+public Personnage getPerso() {
+    return perso;
+}
+
+public void setPerso(Personnage perso) {
+    this.perso = perso;
+}
 
 }
 

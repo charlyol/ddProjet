@@ -1,5 +1,6 @@
 package Plateau;
 
+import Affichage.Menu;
 import personnage.Personnage;
 
 public class MonsterCaisse implements Caisse {
@@ -21,19 +22,26 @@ public class MonsterCaisse implements Caisse {
             if (perso.getEquipementDefensif().getNiveauDefense() - atk < 0) {
                 perso.setLife(perso.getLife() + perso.getEquipementDefensif().getNiveauDefense() - atk);
                 int toto = perso.getEquipementDefensif().getNiveauDefense() - atk;
-                if (toto < 0){
-                    toto=0;
+                if (toto < 0) {
+                    System.out.println(" Le " + name + " vous enlève " + toto + " de PV ");
+                    if (perso.getLife() <= 0) {
+                        return;
+                    }
                 }
-                System.out.println(" Le " + name + " vous enlève " + toto + " de PV ");
             } else {
                 System.out.println(" Le " + name + " ne vous touche pas ");
             }
             monsterLife = monsterLife - perso.getEquipementOffensif().getNiveauAttaque();
-            System.out.println(" vous avez touchez le " + name + " il est perd " + perso.getEquipementOffensif().getNiveauAttaque() + " PV de vie, il lui reste maintenant " + monsterLife + " de vie");
-
-            if (monsterLife == 0){
+            if (monsterLife < 0) {
+                monsterLife = 0;
+                System.out.println(" vous avez touchez le " + name + " il est perd " + perso.getEquipementOffensif().getNiveauAttaque() + " PV de vie, il lui reste maintenant " + monsterLife + " de vie");
+            } else {
+                System.out.println(" vous avez touchez le " + name + " il est perd " + perso.getEquipementOffensif().getNiveauAttaque() + " PV de vie, il lui reste maintenant " + monsterLife + " de vie");
+            }
+            if (monsterLife == 0) {
                 System.out.println(" Le " + name + " est mort bravo ! ");
             }
         }
+
     }
 }
