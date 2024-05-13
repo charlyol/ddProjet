@@ -4,7 +4,6 @@ import Affichage.Display;
 import Affichage.Menu;
 import Plateau.Board;
 import Plateau.Caisse;
-import Plateau.ListCaisse;
 import personnage.Personnage;
 
 import java.util.List;
@@ -16,7 +15,6 @@ public class Game {
     private Personnage perso;
     private final Board board;
     private final Jetdede lance;
-    Dialog dialog = new Dialog();
 
 
     public Game(Display display, Personnage perso, List<Caisse> caisses, int sizeBoard) {
@@ -29,15 +27,12 @@ public class Game {
 
     public void initializeGame() {
         Display display = this.display;
-        ListCaisse listCaisse = new ListCaisse();
-        List<Caisse> caisses = listCaisse.getCaisses();
         this.perso = display.creatPerso();
         this.board.setSizeBoard(64);
     }
 
 
     public void playTurn() throws PersonnageHorsPlateauException {
-        int result;
         perso.setPosition(1);
 
         while (true) {
@@ -45,13 +40,13 @@ public class Game {
             Caisse caisse = board.getCaisseList().get(perso.getPosition());
             caisse.open(perso);
             if (perso.getLife() <= 0) {
-                boolean response = dialog.askBoolean("Bravo ! vous êtes mort ! Nouvelle partie ?");
+                boolean response = display.notifyYourAreDead();
                 if (response) {
-                    System.out.println("L'aventure recommence ?");
+                    display.notifyStartAventure();
                     Menu menu = new Menu();
                     menu.affichage();
                 } else {
-                    System.out.println("Peut-être une autre fois...");
+                    display.notifyByeBye();
                     System.exit(0);
                 }
             }
@@ -65,37 +60,26 @@ public class Game {
             if (display.askThrowDice()) {
                 display.notifyMoveOnCase(perso.getPosition());
                 result = lance.jetDeDe();
-                System.out.println("Vous avez fait un score de " + result + " !");
+                display.notifyResultDice(result);
                 perso.setPosition(perso.getPosition() + result);
                 if (perso.getPosition() >= board.getSizeBoard().length) {
-                    throw new PersonnageHorsPlateauException("Félicitations vous êtes sur la case 64 ! Vous avez fini le jeu !");
+                    throw new PersonnageHorsPlateauException();
                 }
                 return;
             }
 
             if (display.askFlee()) {
-                display.notifyChooseToFlee();
+                display.notifyByeBye();
                 System.exit(0);
             }
         }
     }
 
-
     public Personnage getPersonnage() {
         return perso;
     }
-
-    public Board getBoard() {
-        return board;
-    }
-
     public Personnage getPerso() {
         return perso;
     }
-
-    public void setPerso(Personnage perso) {
-        this.perso = perso;
-    }
-
 }
 

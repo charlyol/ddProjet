@@ -1,6 +1,10 @@
 package personnage;
 
+import Affichage.Display;
+
 public class Warrior extends Personnage {
+
+    Display display = new Display();
 
     public Warrior(String nom) {
 
@@ -18,6 +22,7 @@ public class Warrior extends Personnage {
 
     @Override
     public String hurler() {
-        return "Waaaah";
+        display.notifyWarriorHurle();
+        return "";
     }
 }

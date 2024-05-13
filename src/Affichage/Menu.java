@@ -1,5 +1,4 @@
 package Affichage;
-
 import Mecanique.*;
 
 public class Menu {
@@ -7,7 +6,6 @@ public class Menu {
     public void affichage() {
         Display display = new Display();
         boolean shouldStart = display.start();
-        Dialog dialog = new Dialog();
 
         if (!shouldStart) {
             System.exit(0);
@@ -22,13 +20,13 @@ public class Menu {
                 game.playTurn();
             }
         } catch (PersonnageHorsPlateauException e) {
-            boolean response = dialog.askBoolean("Bravo vous avez fini le jeu ! Nouvelle partie ?");
+            display.notifyWin();
+            boolean response = display.notifyFinishGameAndRestart();
+            display.notifyStartAventure();
             if (response) {
-                System.out.println("L'aventure recommence ?");
                 Menu menu = new Menu();
                 menu.affichage();
             } else {
-                System.out.println("Peut-être une autre fois...");
                 System.exit(0);
             }
         }

@@ -1,12 +1,12 @@
 package Plateau;
-
-import personnage.EquipementOffensif;
+import Affichage.Display;
 import personnage.Personnage;
 import personnage.Warrior;
 
 public class WarriorCaisse implements Caisse {
     private final String name;
     private final int attaque;
+    Display display = new Display();
 
     public WarriorCaisse(String name, int attaque) {
         this.name = name;
@@ -15,18 +15,16 @@ public class WarriorCaisse implements Caisse {
 
     @Override
     public void open(Personnage perso) {
-        System.out.println(" Caisse de " + name + " de " + attaque + " Atk ouverte ");
+        display.notifyOpenEquipement(name,attaque);
 
         if (perso instanceof Warrior) {
             if (perso.getEquipementOffensif().getNiveauAttaque() < attaque) {
                 perso.getEquipementOffensif().setNiveauAttaque(attaque);
                 perso.getEquipementOffensif().setNom(name);
-                System.out.println(" Vous venez d'avoir " + name + " de " + attaque + " Atk ");
-
+                display.notifyGetEquipement(name,attaque);
             }
-
         } else {
-            System.out.println(" Vous êtes un Wizzard vous ne pouvez pas l'utilisez ");
+            display.notifyYouAreWizzard();
         }
     }
 }
