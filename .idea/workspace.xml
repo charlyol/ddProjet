@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="connect to mysql localhost for db">
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="first connection and first requete">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_27.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
@@ -151,7 +152,7 @@
       <workItem from="1714719053668" duration="20947000" />
       <workItem from="1715583051435" duration="23391000" />
       <workItem from="1715669199934" duration="14971000" />
-      <workItem from="1715694714214" duration="2927000" />
+      <workItem from="1715694714214" duration="3231000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -297,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715696143604</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="first connection and first requete">
+      <option name="closed" value="true" />
+      <created>1715697945340</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715697945340</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +329,8 @@
     <MESSAGE value="update v33" />
     <MESSAGE value="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire" />
     <MESSAGE value="connect to mysql localhost for db" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect to mysql localhost for db" />
+    <MESSAGE value="first connection and first requete" />
+    <option name="LAST_COMMIT_MESSAGE" value="first connection and first requete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
