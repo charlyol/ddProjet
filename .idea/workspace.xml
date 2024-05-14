@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="update v33">
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire">
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.27.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mecanique/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mecanique/Jetdede.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Jetdede.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/ListCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/ListCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/WarriorCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/WarriorCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/WizardCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/WizardCaisse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Arme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Arme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Bouclier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Bouclier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Philtre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Philtre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddProjet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ddProjet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,27 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/olinger/IdeaProjects/campus-java-algo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/olinger/IdeaProjects/ddProjet/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/olinger/IdeaProjects/ddProjet/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/olinger/IdeaProjects/ddProjet/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "XML"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Mecanique" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Plateau" />
@@ -138,7 +141,8 @@
       <workItem from="1714648952294" duration="11797000" />
       <workItem from="1714719053668" duration="20947000" />
       <workItem from="1715583051435" duration="23391000" />
-      <workItem from="1715669199934" duration="6815000" />
+      <workItem from="1715669199934" duration="14971000" />
+      <workItem from="1715694714214" duration="1255000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -268,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715610963483</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire">
+      <option name="closed" value="true" />
+      <created>1715677406786</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715677406786</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +301,8 @@
     <MESSAGE value="tout fonctionne pour le jeu" />
     <MESSAGE value="tout fonctionne pour le jeu même quand tu flee" />
     <MESSAGE value="update v33" />
-    <option name="LAST_COMMIT_MESSAGE" value="update v33" />
+    <MESSAGE value="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
