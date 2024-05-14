@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire">
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.27.jar" afterDir="false" />
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="connect to mysql localhost for db">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddProjet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ddProjet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,12 @@
   "keyToString": {
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/olinger/IdeaProjects/ddProjet/lib",
@@ -69,12 +75,15 @@
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/olinger/IdeaProjects/ddProjet/src/Main.java",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.46896553",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
       "XML"
     ]
@@ -142,7 +151,7 @@
       <workItem from="1714719053668" duration="20947000" />
       <workItem from="1715583051435" duration="23391000" />
       <workItem from="1715669199934" duration="14971000" />
-      <workItem from="1715694714214" duration="1255000" />
+      <workItem from="1715694714214" duration="2927000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -280,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715677406786</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="connect to mysql localhost for db">
+      <option name="closed" value="true" />
+      <created>1715696143604</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715696143604</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +319,8 @@
     <MESSAGE value="tout fonctionne pour le jeu même quand tu flee" />
     <MESSAGE value="update v33" />
     <MESSAGE value="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire" />
+    <MESSAGE value="connect to mysql localhost for db" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect to mysql localhost for db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
