@@ -1,12 +1,14 @@
 package Plateau;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class ListCaisse {
     private final List<Caisse> caisses;
 
     public ListCaisse() {
-        caisses = List.of(
+        caisses = new ArrayList<>(List.of(
                 new WizardCaisse("Eclair", 2),//N°1
                 new WarriorCaisse("Massue", 3),//N°2
                 new MonsterCaisse("Gobelin", 1, 6),//N°3
@@ -71,9 +73,20 @@ public class ListCaisse {
                 new videCaisse("rien"),//N°62
                 new videCaisse("rien"),//N°63
                 new videCaisse("rien")//N°64
-        );
+        ));
 
+        shuffle(caisses);
     }
+    private void shuffle(List<Caisse> caisses) {
+        Random random = new Random();
+        for (int i = caisses.size() - 1; i > 0; i--) {
+            int index = random.nextInt(i + 1);
+            Caisse temp = caisses.get(i);
+            caisses.set(i, caisses.get(index));
+            caisses.set(index, temp);
+        }
+    }
+
 
     public List<Caisse> getCaisses() {
         return caisses;

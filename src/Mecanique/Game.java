@@ -1,11 +1,9 @@
 package Mecanique;
-
 import Affichage.Display;
 import Affichage.Menu;
 import Plateau.Board;
 import Plateau.Caisse;
 import personnage.Personnage;
-
 import java.util.List;
 
 
@@ -62,6 +60,7 @@ public class Game {
                 result = lance.jetDeDe();
                 display.notifyResultDice(result);
                 perso.setPosition(perso.getPosition() + result);
+                display.notifyNewCaseNow(perso.getPosition());
                 if (perso.getPosition() >= board.getSizeBoard().length) {
                     throw new PersonnageHorsPlateauException();
                 }

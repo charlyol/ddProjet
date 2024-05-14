@@ -2,6 +2,7 @@ package Plateau;
 import Affichage.Display;
 import personnage.Personnage;
 import personnage.Warrior;
+import personnage.Verstappen;
 
 public class WarriorCaisse implements Caisse {
     private final String name;
@@ -17,7 +18,7 @@ public class WarriorCaisse implements Caisse {
     public void open(Personnage perso) {
         display.notifyOpenEquipement(name,attaque);
 
-        if (perso instanceof Warrior) {
+        if (perso instanceof Warrior || perso instanceof Verstappen) {
             if (perso.getEquipementOffensif().getNiveauAttaque() < attaque) {
                 perso.getEquipementOffensif().setNiveauAttaque(attaque);
                 perso.getEquipementOffensif().setNom(name);

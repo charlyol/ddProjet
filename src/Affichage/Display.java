@@ -1,10 +1,12 @@
 package Affichage;
+
 import Mecanique.CreatNewPersonnageException;
 import personnage.Personnage;
 import Mecanique.Dialog;
 import personnage.Verstappen;
 import personnage.Warrior;
 import personnage.Wizard;
+
 import java.util.Scanner;
 
 public class Display {
@@ -65,6 +67,23 @@ public class Display {
         System.out.println("Vous êtes actuellement sur la case " + position);
     }
 
+    public void notifyNewCaseNow(int position) {
+        if (position > 64) {
+            System.out.println("Vous êtes maintenant sur la dernière case ");
+        } else {
+            System.out.println("Vous êtes maintenant sur la case " + position);
+        }
+    }
+
+    public void notifyLoosePosition(int result) {
+        if (result == 1) {
+            System.out.println("Vous avez décidé de fuir le combat ! Vous reculez d'une case !");
+        } else {
+            System.out.println("Vous avez décidé de fuir le combat ! Vous reculez de " + result + " cases !");
+        }
+    }
+
+
     public boolean askThrowDice() {
         return dialog.askBoolean("Voulez-vous lancer le dé ?");
     }
@@ -73,39 +92,43 @@ public class Display {
         return dialog.askBoolean("Voulez-vous fuir ?");
     }
 
-    public void notifyStartAventure(){
+    public void notifyStartAventure() {
         System.out.println("L'aventure recommence ?");
     }
 
-    public void notifyByeBye(){
+    public void notifyByeBye() {
         System.out.println("Peut-être une autre fois...");
     }
 
-    public boolean notifyFinishGameAndRestart(){
+    public boolean notifyFinishGameAndRestart() {
         return dialog.askBoolean("Bravo vous avez fini le jeu ! Nouvelle partie ?");
+    }
+
+    public boolean notifyFigthOrFlee() {
+        return dialog.askBoolean("Engager le combat ou fuite ?");
     }
 
     public void notifyMeetMonster(String name, int atk, int life) {
         System.out.println("Rencontre avec un " + name + " d'une puissance de " + atk + " Atk " + " avec " + life + " PV ");
     }
 
-    public void notifyDefMonster (String name, int toto) {
+    public void notifyDefMonster(String name, int toto) {
         System.out.println(" Le " + name + " vous enlève " + toto + " de PV ");
     }
 
-    public void notifyAtkMonster (String name, int levelAtk, int monsterLife) {
+    public void notifyAtkMonster(String name, int levelAtk, int monsterLife) {
         System.out.println(" vous avez touchez le " + name + " il est perd " + levelAtk + " PV de vie, il lui reste maintenant " + monsterLife + " de vie");
     }
 
-    public void notifyMonsterDead (String name){
+    public void notifyMonsterDead(String name) {
         System.out.println(" Le " + name + " est mort bravo ! ");
     }
 
-    public void notifyWin (){
+    public void notifyWin() {
         System.out.println("Félicitations vous êtes sur la case 64 ! Vous avez fini le jeu !");
     }
 
-    public void notifyResultDice(int result){
+    public void notifyResultDice(int result) {
         System.out.println("Vous avez fait un score de " + result + " !");
     }
 
@@ -113,39 +136,39 @@ public class Display {
         System.out.println("il n'y a rien ici");
     }
 
-    public void notifyLifeMax(){
+    public void notifyLifeMax() {
         System.out.println(" Votre vie est au max ! ");
     }
 
-    public void notifyOpenCaisseLife(String nom,int health){
+    public void notifyOpenCaisseLife(String nom, int health) {
         System.out.println(" Caisse " + nom + " de " + health + " PV ouverte ");
     }
 
-    public void notifyGetLife(String nom,int health){
+    public void notifyGetLife(String nom, int health) {
         System.out.println(" Vous venez de boire une " + nom + " de " + health + " PV ");
     }
 
-    public void notifyOpenEquipement(String name, int atk){
+    public void notifyOpenEquipement(String name, int atk) {
         System.out.println(" Caisse de " + name + " de " + atk + " Atk ouverte ");
     }
 
-    public void notifyGetEquipement(String name, int atk){
+    public void notifyGetEquipement(String name, int atk) {
         System.out.println(" Vous venez d'avoir " + name + " de " + atk + " Atk ");
     }
 
-    public void notifyYouAreWizzard(){
+    public void notifyYouAreWizzard() {
         System.out.println(" Vous êtes un Wizzard vous ne pouvez pas l'utilisez ");
     }
 
-    public void notifyYouAreWarrior(){
+    public void notifyYouAreWarrior() {
         System.out.println(" Vous êtes un Warrior vous ne pouvez pas l'utilisez ");
     }
 
-    public void notifyDontTouch(String name){
+    public void notifyDontTouch(String name) {
         System.out.println(" Le " + name + " ne vous touche pas ");
     }
 
-    public void notifyVerstappenHurle(){
+    public void notifyVerstappenHurle() {
         System.out.println(
                 """
                         ⣋⡞⡵⣻⢼⣹⢣⡗⣏⡯⣞⡹⢶⡹⢬⣛⢧⠧⣏⣧⣛⠶⣽⡸⣵⣹⢲⢣⡏⡗⡞⣼⣱⡹⢼⢼⣷⡇⡛⠶⣬⣿⢱⣎⡟⣮⣹⢚⡼⣣⢏⣳⡹⢎⡳⣝⣚⡳⠽⣎⢷
@@ -183,7 +206,7 @@ public class Display {
                         ⣿⣿⣿⣿⣿⣿⣿⢻⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣷⣼⣾⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣷⣿⣿⣧⣿⣿⣿⣿⣿⣿""");
     }
 
-    public void notifyWarriorHurle(){
+    public void notifyWarriorHurle() {
         System.out.println("""
                 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣿⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                 ⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀
@@ -206,7 +229,7 @@ public class Display {
                 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⡿⠋⠀⠀⠈⠀⠀⠀⠀⠀⠀""");
     }
 
-    public void notifyWizardHurle(){
+    public void notifyWizardHurle() {
         System.out.println("""
                 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⠟⠛⠉⠉⠉⠛⠻⢿⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -237,7 +260,7 @@ public class Display {
                 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""");
     }
 
-    public boolean notifyYourAreDead(){
+    public boolean notifyYourAreDead() {
         return dialog.askBoolean("""
                                          ▄▄▄▄    ██▀███   ▄▄▄    ██▒   █▓ ▒█████      ▐██▌                                               \s
                                         ▓█████▄ ▓██ ▒ ██▒▒████▄ ▓██░   █▒▒██▒  ██▒    ▐██▌                                               \s
