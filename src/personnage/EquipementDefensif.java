@@ -3,11 +3,11 @@ package personnage;
 public abstract class EquipementDefensif {
 
     private String nom;
-    private int niveauDefense;
+    private int levelDef;
 
-    public EquipementDefensif(String nom, int niveauDefense) {
+    public EquipementDefensif(String nom, int levelDef) {
         this.nom = nom;
-        this.niveauDefense = niveauDefense;
+        this.levelDef = levelDef;
     }
 
     public void setNom(String nom) {
@@ -17,10 +17,10 @@ public abstract class EquipementDefensif {
         return nom;
     }
 
-    public void setNiveauDefense(int niveauDefense) {
-        this.niveauDefense = niveauDefense;
+    public void setLevelDef(int levelDef) {
+        this.levelDef = levelDef;
     }
-    public int getNiveauDefense() {
-        return niveauDefense;
+    public int getLevelDef() {
+        return levelDef;
     }
 }

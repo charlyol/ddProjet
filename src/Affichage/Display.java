@@ -1,12 +1,11 @@
 package Affichage;
 
 import Mecanique.CreatNewPersonnageException;
-import personnage.Personnage;
+import models.Personnages;
 import Mecanique.Dialog;
 import personnage.Verstappen;
 import personnage.Warrior;
 import personnage.Wizard;
-
 import java.util.Scanner;
 
 public class Display {
@@ -24,7 +23,7 @@ public class Display {
         return response;
     }
 
-    public Personnage creatPerso() {
+    public Personnages creatPerso() {
         System.out.println("Créer un nouveau personnage");
         while (true) {
             try {
@@ -55,12 +54,12 @@ public class Display {
         }
     }
 
-    public void notifyStatsPerso(Personnage personnage) {
-        System.out.println(" Vie : " + personnage.getLife());
-        System.out.println(" Equipement Offensif : " + personnage.getEquipementOffensif().getNom());
-        System.out.println(" Points Atk : " + personnage.getEquipementOffensif().getNiveauAttaque());
-        System.out.println(" Equipement Défensif : " + personnage.getEquipementDefensif().getNom());
-        System.out.println(" Points Def : " + personnage.getEquipementDefensif().getNiveauDefense());
+    public void notifyStatsPerso(Personnages personnages) {
+        System.out.println(" Vie : " + personnages.getLife());
+        System.out.println(" Equipement Offensif : " + personnages.getEquipementOffensif().getNom());
+        System.out.println(" Points Atk : " + personnages.getEquipementOffensif().getLevelAtk());
+        System.out.println(" Equipement Défensif : " + personnages.getEquipementDefensif().getNom());
+        System.out.println(" Points Def : " + personnages.getEquipementDefensif().getLevelDef());
     }
 
     public void notifyMoveOnCase(int position) {

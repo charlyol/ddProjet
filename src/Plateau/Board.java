@@ -4,17 +4,17 @@ import java.util.List;
 
 public class Board {
     
-    final List<Caisse> caisseList;
+    final List<Chest> chestList;
     private int[] sizeBoard;
 
-    public Board(List<Caisse> caisses, int sizeBoard) {
-        ListCaisse listCaisse = new ListCaisse();
-        this.caisseList = listCaisse.getCaisses();
+    public Board(List<Chest> chest, int sizeBoard) {
+        ListChest listChest = new ListChest();
+        this.chestList = listChest.getCaisses();
         this.sizeBoard = new int [sizeBoard];
     }
 
-    public List<Caisse> getCaisseList() {
-        return caisseList;
+    public List<Chest> getCaisseList() {
+        return chestList;
     }
 
     public int[] getSizeBoard() {

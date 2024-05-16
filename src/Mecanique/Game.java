@@ -1,42 +1,43 @@
 package Mecanique;
+
 import Affichage.Display;
 import Affichage.Menu;
 import Plateau.Board;
-import Plateau.Caisse;
-import personnage.Personnage;
-import java.util.List;
+import Plateau.Chest;
+import dao.PersonnagesDAO;
+import models.Personnages;
 
+import java.util.List;
 
 public class Game {
 
     private final Display display;
-    private Personnage perso;
+    private Personnages perso;
     private final Board board;
     private final Jetdede lance;
+    private final PersonnagesDAO personnagesDAO;
 
-
-    public Game(Display display, Personnage perso, List<Caisse> caisses, int sizeBoard) {
+    public Game(Display display, Personnages perso, List<Chest> caisses, int sizeBoard) {
         this.display = display;
         this.perso = perso;
         this.board = new Board(caisses, sizeBoard);
         this.lance = new Jetdede();
+        this.personnagesDAO = new PersonnagesDAO();
     }
 
-
     public void initializeGame() {
-        Display display = this.display;
         this.perso = display.creatPerso();
         this.board.setSizeBoard(64);
     }
-
 
     public void playTurn() throws PersonnageHorsPlateauException {
         perso.setPosition(1);
 
         while (true) {
             moovePlayer();
-            Caisse caisse = board.getCaisseList().get(perso.getPosition());
-            caisse.open(perso);
+            Chest chest = board.getCaisseList().get(perso.getPosition());
+            chest.open(perso);
+            personnagesDAO.savePersonnage(perso);
             if (perso.getLife() <= 0) {
                 boolean response = display.notifyYourAreDead();
                 if (response) {
@@ -48,7 +49,7 @@ public class Game {
                     System.exit(0);
                 }
             }
-            display.notifyStatsPerso(getPerso());
+            display.notifyStatsPerso(perso);
         }
     }
 
@@ -74,11 +75,11 @@ public class Game {
         }
     }
 
-    public Personnage getPersonnage() {
+    public Personnages getPersonnage() {
         return perso;
     }
-    public Personnage getPerso() {
+
+    public Personnages getPerso() {
         return perso;
     }
 }
-

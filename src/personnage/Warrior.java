@@ -1,8 +1,9 @@
 package personnage;
 
 import Affichage.Display;
+import models.Personnages;
 
-public class Warrior extends Personnage {
+public class Warrior extends Personnages {
 
     Display display = new Display();
 

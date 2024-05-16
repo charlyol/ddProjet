@@ -2,17 +2,17 @@ package Plateau;
 
 import Affichage.Display;
 import Mecanique.Jetdede;
-import personnage.Personnage;
+import models.Personnages;
 
 
-public class MonsterCaisse implements Caisse {
+public class Monster implements Chest {
     private final String name;
     private final int atk;
     private final int life;
     private final Jetdede lance;
     Display display = new Display();
 
-    public MonsterCaisse(String name, int atk, int life) {
+    public Monster(String name, int atk, int life) {
         this.name = name;
         this.atk = atk;
         this.life = life;
@@ -20,16 +20,16 @@ public class MonsterCaisse implements Caisse {
     }
 
     @Override
-    public void open(Personnage perso) {
+    public void open(Personnages perso) {
         display.notifyMeetMonster(name, atk, life);
 
         boolean response = display.notifyFigthOrFlee();
         if (response) {
             int monsterLife = life;
             while (perso.getLife() > 0 && monsterLife > 0) {
-                if (perso.getEquipementDefensif().getNiveauDefense() - atk < 0) {
-                    perso.setLife(perso.getLife() + perso.getEquipementDefensif().getNiveauDefense() - atk);
-                    int toto = perso.getEquipementDefensif().getNiveauDefense() - atk;
+                if (perso.getEquipementDefensif().getLevelDef() - atk < 0) {
+                    perso.setLife(perso.getLife() + perso.getEquipementDefensif().getLevelDef() - atk);
+                    int toto = perso.getEquipementDefensif().getLevelDef() - atk;
                     if (toto < 0) {
                         display.notifyDefMonster(name, toto);
                         if (perso.getLife() <= 0) {
@@ -39,12 +39,12 @@ public class MonsterCaisse implements Caisse {
                 } else {
                     display.notifyDontTouch(name);
                 }
-                monsterLife = monsterLife - perso.getEquipementOffensif().getNiveauAttaque();
+                monsterLife = monsterLife - perso.getEquipementOffensif().getLevelAtk();
                 if (monsterLife < 0) {
                     monsterLife = 0;
-                    display.notifyAtkMonster(name, perso.getEquipementOffensif().getNiveauAttaque(), monsterLife);
+                    display.notifyAtkMonster(name, perso.getEquipementOffensif().getLevelAtk(), monsterLife);
                 } else {
-                    display.notifyAtkMonster(name, perso.getEquipementOffensif().getNiveauAttaque(), monsterLife);
+                    display.notifyAtkMonster(name, perso.getEquipementOffensif().getLevelAtk(), monsterLife);
                 }
                 if (monsterLife == 0) {
                     display.notifyMonsterDead(name);

@@ -1,8 +1,9 @@
 package personnage;
 
 import Affichage.Display;
+import models.Personnages;
 
-public class Verstappen extends Personnage {
+public class Verstappen extends Personnages {
 
     Display display = new Display();
 
