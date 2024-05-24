@@ -1,35 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="demojdbc:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="first connection and first requete">
-      <change afterPath="$PROJECT_DIR$/src/dao/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/PersonnagesDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Personnage.java" afterDir="false" />
+    <list default="true" id="9bca7196-2927-41eb-828b-62f0e2bf4deb" name="Changes" comment="perso new creat and save">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classDiagram.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/GameDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/PersonnagesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/useCaseDiagram.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mecanique/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mecanique/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/Caisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/ListCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/ListChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/MonsterCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/PotionCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Potion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/WarriorCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/WizardCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plateau/videCaisse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plateau/Umpty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementDefensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/EquipementDefensif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementOffensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/EquipementOffensif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Personnages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Verstappen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Verstappen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnage/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnage/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.27.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affichage/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Affichage/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affichage/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Affichage/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/CreatNewPersonnageException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanique/CreatNewPersonnageException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanique/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanique/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/Jetdede.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanique/Jetdede.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mecanique/PersonnageHorsPlateauException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanique/PersonnageHorsPlateauException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/Chest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/ListChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/ListChest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Umpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/Empty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plateau/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plateau/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PersonnagesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Personnage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Personnages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Personnages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Arme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Arme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Bouclier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Bouclier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementDefensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/EquipementDefensif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/EquipementOffensif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/EquipementOffensif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Philtre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Philtre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Verstappen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Verstappen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/personnage/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -75,49 +102,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MainTestDB.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/olinger/IdeaProjects/ddProjet/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/olinger/IdeaProjects/ddProjet/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.46896553",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestDB.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JAR Application.demojdbc.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/olinger/IdeaProjects/ddProjet/target&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/olinger/IdeaProjects/ddProjet/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.46896553&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "hive",
-      "mysql_aurora_aws",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;hive&quot;,
+      &quot;mysql_aurora_aws&quot;,
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "XML"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;XML&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Mecanique" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Plateau" />
@@ -126,48 +160,46 @@
       <recent name="Personnage" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ddProjet" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
-      <module name="ddProjet" />
+      <module name="demojdbc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.MainTestDB" />
-      <module name="ddProjet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="demojdbc.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/demojdbc_jar/demojdbc.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="JAR Application.demojdbc.jar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTestDB" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -190,7 +222,18 @@
       <workItem from="1715669199934" duration="14971000" />
       <workItem from="1715694714214" duration="3231000" />
       <workItem from="1715755866252" duration="13994000" />
-      <workItem from="1715844313583" duration="19627000" />
+      <workItem from="1715844313583" duration="19904000" />
+      <workItem from="1715928371564" duration="924000" />
+      <workItem from="1715929308299" duration="700000" />
+      <workItem from="1715930024061" duration="100000" />
+      <workItem from="1715930137887" duration="21624000" />
+      <workItem from="1716281887646" duration="1297000" />
+      <workItem from="1716291704008" duration="27000" />
+      <workItem from="1716291852661" duration="2640000" />
+      <workItem from="1716360643191" duration="10809000" />
+      <workItem from="1716449075867" duration="14466000" />
+      <workItem from="1716534426938" duration="8319000" />
+      <workItem from="1716544717931" duration="6892000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -344,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715697945340</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="perso new creat and save">
+      <option name="closed" value="true" />
+      <created>1715870683708</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715870683708</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +419,8 @@
     <MESSAGE value="Nouveau personnage &#10;Case aléatoire&#10;possibility de fuire" />
     <MESSAGE value="connect to mysql localhost for db" />
     <MESSAGE value="first connection and first requete" />
-    <option name="LAST_COMMIT_MESSAGE" value="first connection and first requete" />
+    <MESSAGE value="perso new creat and save" />
+    <option name="LAST_COMMIT_MESSAGE" value="perso new creat and save" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,6 +429,20 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Mecanique/Game.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/GameDAO.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
